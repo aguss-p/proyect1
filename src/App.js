@@ -1,10 +1,13 @@
-import './App.css';
+import { Fragment } from 'react';
+import AppBar from './components/AppBar';
 //MESSI
 function App() {
   
   return (
-    
-    <h1>asdas</h1>
+    <Fragment>
+      <AppBar/>
+      <h1>asdasdsaas</h1>
+    </Fragment> 
   );
 }
 
