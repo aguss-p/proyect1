@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  /*el mau aki*/
   return (
     <div className="App">
       <header className="App-header">
