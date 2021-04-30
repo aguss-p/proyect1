@@ -105,13 +105,17 @@ export default function PrimarySearchAppBar() {
   };
 
   const menuId = 'primary-search-account-menu';
+//modificacion
+  const configVerticalHorizonal = React.memo(()=>({ vertical: 'top', horizontal: 'right' }
+  ),[])
+//modificacion
   const renderMenu = (
     <Menu
       anchorEl={anchorEl}
-      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+      anchorOrigin={configVerticalHorizonal}
       id={menuId}
       keepMounted
-      transformOrigin={{ vertical: 'top', horizontal: 'right' }}
+      transformOrigin={configVerticalHorizonal}
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
@@ -124,10 +128,10 @@ export default function PrimarySearchAppBar() {
   const renderMobileMenu = (
     <Menu
       anchorEl={mobileMoreAnchorEl}
-      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+      anchorOrigin={configVerticalHorizonal}
       id={mobileMenuId}
       keepMounted
-      transformOrigin={{ vertical: 'top', horizontal: 'right' }}
+      transformOrigin={configVerticalHorizonal}
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
